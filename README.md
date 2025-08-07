@@ -8,59 +8,73 @@ This calculator application provides complete arithmetic functionality including
 
 ## Features
 
+- **Menu-Driven Interface**: Choose from 4 arithmetic operations via numbered menu
 - **Addition**: Add two numbers together
 - **Subtraction**: Subtract the second number from the first
 - **Multiplication**: Multiply two numbers
 - **Division**: Divide the first number by the second (with zero-division protection)
 - **User Input**: Interactive input system using Scanner
-- **Operation Selection**: Choose from +, -, *, / operations
-- **Error Handling**: Prevents division by zero
+- **Error Handling**: Prevents division by zero and invalid menu selections
 - **Clean Output**: Displays the calculation in a readable format
 
 ## Files
 
-- `Multiply.java` - Main Java class containing all arithmetic methods and user interface
+- `Calculator.java` - Main Java class containing all arithmetic methods and user interface
 
 ## How to Use
 
 1. **Compile the program:**
    ```bash
-   javac Multiply.java
+   javac Calculator.java
    ```
 
 2. **Run the program:**
    ```bash
-   java Multiply
+   java Calculator
    ```
 
 3. **Follow the prompts:**
+   - Choose an operation from the menu (1-4)
    - Enter the first number when prompted
    - Enter the second number when prompted
-   - Enter the operation (+, -, *, /) when prompted
    - View the calculation result
 
 ## Example Usage
 
 ```
+=== CALCULATOR ===
+Choose an operation:
+1. Addition (+)
+2. Subtraction (-)
+3. Multiplication (*)
+4. Division (/)
+Enter your choice (1-4): 1
 Enter first number: 10
 Enter second number: 5
-Enter operation (+, -, *, /): +
+
 Result: 10.0 + 5.0 = 15.0
 ```
 
 ```
+=== CALCULATOR ===
+Choose an operation:
+1. Addition (+)
+2. Subtraction (-)
+3. Multiplication (*)
+4. Division (/)
+Enter your choice (1-4): 4
 Enter first number: 15
 Enter second number: 3
-Enter operation (+, -, *, /): /
+
 Result: 15.0 / 3.0 = 5.0
 ```
 
 ## Supported Operations
 
-- **Addition (+)**: Returns the sum of two numbers
-- **Subtraction (-)**: Returns the difference between two numbers
-- **Multiplication (*)**: Returns the product of two numbers
-- **Division (/)**: Returns the quotient of two numbers (prevents division by zero)
+- **Addition (1)**: Returns the sum of two numbers
+- **Subtraction (2)**: Returns the difference between two numbers
+- **Multiplication (3)**: Returns the product of two numbers
+- **Division (4)**: Returns the quotient of two numbers (prevents division by zero)
 
 ## Requirements
 
@@ -71,14 +85,17 @@ Result: 15.0 / 3.0 = 5.0
 
 ```
 calculator-/
-├── Multiply.java
+├── Calculator.java
+├── Multiply.java (individual operation files)
+├── Division.java
+├── Subtraction.java
 └── README.md
 ```
 
 ## Error Handling
 
 - Division by zero protection with error message
-- Invalid operation detection and error reporting
+- Invalid menu choice detection and error reporting
 
 ---
 
