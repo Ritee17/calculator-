@@ -86,9 +86,6 @@ Result: 15.0 / 3.0 = 5.0
 ```
 calculator-/
 ├── Calculator.java
-├── Multiply.java (individual operation files)
-├── Division.java
-├── Subtraction.java
 └── README.md
 ```
 
